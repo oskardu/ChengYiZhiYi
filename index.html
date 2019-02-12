@@ -1,171 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"  content="width=device-width">
+  <meta name="viewport" content="width=device-width">
   <!-- <link rel="shortcut icon" href="./favicon.ico?crc=4225511874"" type="image/x-icon">
   <link rel="bookmark" href="./favicon.ico?crc=4225511874"" type="image/x-icon"> -->
-  <title>呈仪制衣</title>
+<title>呈仪制衣</title>
+<link href="index.css" rel="stylesheet">
 
-  <style>
-    @font-face {
-      font-family: 'songti';
-      src: url('./font/SimSun.ttf');
-    }
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 
-    body, html {
-      font-family: 'songti', sans-serif;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-    }
-    .wrapper {
-      position: relative;
-
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-    }
-    .slider {
-      width: 100%;
-      height: 100%;
-
-      position: absolute;
-      left: 0;
-      top: 0;
-
-      background: #e3e3e3;
-      z-index: 1;
-      opacity: 0;
-
-      transition: all 2s;
-    }
-    .active {
-      z-index: 2;
-      opacity: 1;
-    }
-    .slider img {
-      min-width: 100%;
-      height: 100%;
-
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    footer {
-      position: fixed;
-      bottom: 0;
-
-      width: 100%;
-      height: 50px;
-      
-      color: #fff;
-      font-size: 14px;
-      text-align: left;
-      text-indent: 60px;
-      line-height: 50px;
-
-      background: #001730;
-      z-index: 4;
-    }
-
-    footer span {
-      margin-left: 40px;
-    }
-    footer a {
-      color: #fff;
-      text-decoration: underline;
-      font-style: normal;
-    }
-    footer .left {
-      float: left;
-    }
-    footer .right {
-      display: flex;
-
-      height: 100%;
-
-      align-items: center;
-      float: right;
-    }
-    .email,
-    .wechat,
-    .email img{
-      cursor: pointer;
-      display: block;
-      width: 26px;
-      height: 26px;
-    }
-    .email {
-      background: url(./img/email.png) no-repeat;
-      background-size: cover;
-    }
-    .email:hover {
-      background: url(./img/email-hover.png) no-repeat;
-      background-size: cover;
-    }
-    .wechat {
-      position: relative;
-      margin: 0 60px 0 35px;
-      background: url(./img/wechat.png) no-repeat;
-      background-size: cover;
-    }
-    .wechat:hover {
-      background: url(./img/wechat-hover.png) no-repeat;
-      background-size: cover;
-    }
-    .wechat:hover .modal {
-      display: block;
-      
-      opacity: 1;
-      transform: translateY(0px);
-    }
-    .logo {
-      position: absolute;
-      top: 40px;
-      left: 50%;
-
-      width: 142px;
-      height: 142px;
-      margin-left: -71px;
-    
-      background: url(./img/logo.png) no-repeat;
-      background-size: cover;
-      z-index: 2;
-    }
-    .modal {
-      display: none;
-
-      position: absolute;
-      top: -160px;
-      left: 50%;
-
-      width: 137px;
-      height: 141px;
-      margin-left: -68.5px;
-
-      transition: all .3s;  
-      opacity: 0;
-      transform: translateY(-141px);
-      
-      background: url(./img/qr.png) no-repeat;
-      background-size: cover;
-    }
-    .modal img{
-      display: block;
-      width: 137px;
-      height: 137px;
-      
-
-      margin: 0 auto;
-    }
-  </style>
 </head>
+
+
 <body>
   <div class="wrapper">
-    <div class="slider active" >
+    <div class="slider active">
       <img src="./img/3.jpg" alt="">
     </div>
     <div class="slider">
@@ -177,22 +35,23 @@
   </div>
   <div class="logo"></div>
   <footer>
-      <div class="left">
-        手机:180-1788-2086<span>地址: 上海市青浦区欧洲街84弄3號</span><span>由<a target="_blank" href="http://www.dribbble.com/chuanhudu"> 杜传虎 </a>设计</span>
-      </div>
-      <div class="right">
-        
-        <a href="mailto:cyzhiyivip@163.com" class="email"></a>
-        <div class="wechat">
-          <div class="modal">
-            <img src="./img/code.jpg" alt="">
-          </div>
+    <div class="left">
+    手机:180-1788-2086<span>地址: 上海市青浦区欧洲街84弄3號</span><span>由 <a target="_blank" href="https://duchuanhu.com/">杜传虎</a> 设计</span>
+    </div>
+    <div class="right">
+
+      <a href="mailto:cyzhiyivip@163.com" class="email"></a>
+      <div class="wechat">
+        <div class="modal">
+          <img src="./img/code.jpg" alt="">
         </div>
       </div>
+    </div>
   </footer>
   <script src="./js/cy.js">
-    
+
   </script>
-  
+
 </body>
+
 </html>
